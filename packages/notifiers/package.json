@@ -1,0 +1,17 @@
+{
+  "name": "@nexusflow/notifiers",
+  "version": "1.0.0",
+  "description": "Notification adapters for NexusFlow (Mock, SMS, Webhook, Email)",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  }
+}

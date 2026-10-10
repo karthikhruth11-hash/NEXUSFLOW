@@ -1,0 +1,26 @@
+{
+  "name": "nexusflow-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NexusFlow: Visual IoT Telemetry & Rule Engine",
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "services/*"
+  ],
+  "scripts": {
+    "build": "npm run --workspaces --if-present build",
+    "typecheck": "npm run --workspaces --if-present typecheck",
+    "lint": "npm run --workspaces --if-present lint",
+    "test": "npm run --workspaces --if-present test",
+    "seed": "npm run --workspace=nexusflow-api seed",
+    "seed:live": "node scripts/seed-live.mjs",
+    "dev:api": "npm run --workspace=nexusflow-api dev",
+    "dev:web": "npm run --workspace=nexusflow-web dev",
+    "dev": "npm run dev:api"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@nexusflow/simulator",
+  "version": "1.0.0",
+  "description": "Deterministic Multi-Device IoT Telemetry Simulator for NexusFlow",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "tsx src/cli.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@nexusflow/shared": "*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  }
+}
