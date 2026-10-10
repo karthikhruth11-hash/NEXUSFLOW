@@ -17,7 +17,8 @@
     "seed:live": "node scripts/seed-live.mjs",
     "dev:api": "npm run --workspace=nexusflow-api dev",
     "dev:web": "npm run --workspace=nexusflow-web dev",
-    "dev": "npm run dev:api"
+    "dev": "npm run dev:api",
+    "deploy:gh-pages": "node scripts/deploy-gh-pages.mjs"
   },
   "devDependencies": {
     "typescript": "^5.6.3",
